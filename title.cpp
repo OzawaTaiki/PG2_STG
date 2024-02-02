@@ -45,9 +45,10 @@ void Title::Update(const char* _keys, const char* _preKeys)
 
 void Title::Draw()
 {
+	Novice::ScreenPrintf(600, 330, "title");
+	Novice::ScreenPrintf(585, 350, "press Space");
 
-
-	if (isTriger|| brighten)
+	if (isTriger || brighten)
 	{
 		Novice::DrawBox(0, 0, 1280, 720, 0, alpha, kFillModeSolid);
 	}

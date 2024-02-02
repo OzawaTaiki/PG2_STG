@@ -20,8 +20,8 @@ void InGame::Init()
 	player->Init();
 
 	enemy[0] = new Enemy({ 100,100 }, 1);
-	enemy[1] = new Enemy({ 500,200 }, 1);
-	enemy[2] = new Enemy({ 300,300 }, -1);
+	enemy[1] = new Enemy({ 800,200 }, 1);
+	enemy[2] = new Enemy({ 600,300 }, -1);
 }
 
 void InGame::Update(const char* _keys)
