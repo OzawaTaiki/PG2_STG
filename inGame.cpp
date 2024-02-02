@@ -43,6 +43,8 @@ void InGame::Update(const char* _keys)
 
 	for (int i = 0; i < kMaxEnemy; i++)
 	{
+		if (!enemy[i]->GetIsAlive())
+			continue;
 		Vector2 temp[4];
 		player->getPosSize(temp[0], temp[1]);
 		enemy[i]->getPosSize(temp[2], temp[3]);
