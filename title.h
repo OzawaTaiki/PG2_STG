@@ -17,6 +17,8 @@ private:
 	bool isTriger = false;
 	bool isExit = false;
 	bool brighten = true;
+	
 	int alpha = 255;
-
+	int titleTextGH;
+	int guideTextGH;
 };

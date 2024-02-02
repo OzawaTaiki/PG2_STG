@@ -4,6 +4,9 @@
 Title::Title()
 {
 	Init();
+
+	titleTextGH = Novice::LoadTexture("./images/titleText.png");
+	guideTextGH = Novice::LoadTexture("./images/pressText.png");
 }
 
 void Title::Init()
@@ -45,8 +48,8 @@ void Title::Update(const char* _keys, const char* _preKeys)
 
 void Title::Draw()
 {
-	Novice::ScreenPrintf(600, 330, "title");
-	Novice::ScreenPrintf(585, 350, "press Space");
+	Novice::DrawSprite(480, 200, titleTextGH, 1, 1, 0, WHITE);
+	Novice::DrawSprite(448, 400, guideTextGH, 1, 1, 0, WHITE);
 
 	if (isTriger || brighten)
 	{
